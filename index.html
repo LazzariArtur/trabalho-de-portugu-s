@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Observador - Início</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Solução robusta para centralizar conteúdo dentro da .container */
+    .container {
+      display: flex;
+      flex-direction: column; /* empilha h1, p, botão verticalmente */
+      align-items: center;    /* centraliza horizontalmente os elementos filhos */
+      justify-content: flex-start; /* trocar para center se quiser também centralizar verticalmente */
+      text-align: center;     /* garante que o texto dentro de elementos fique centralizado */
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    /* Garante centralização mesmo que haja regras conflitantes no style.css */
+    .container h1,
+    .container p {
+      text-align: center !important;
+      margin: 0 0 16px;
+    }
+
+    /* Estilo do botão */
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo O Observador">
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="artigos.html">Artigos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="container">
+    <h1>Bem-vindos ao <span class="highlight">Observador</span></h1>
+    <p>
+      Este é um trabalho de <strong>Língua Portuguesa</strong> sobre 
+      <em>fotos impactantes do jornalismo</em>.<br><br>
+      Desenvolvido por <strong>Artur Lazzari Vieira</strong> e 
+      <strong>Ana Laura Batisti</strong>, nosso objetivo é mostrar como a fotografia 
+      jornalística pode marcar a história e a memória coletiva.
+    </p>
+    <p>Aproveite a leitura e descubra histórias que desafiam o tempo!</p>
+    <a href="artigos.html" class="btn">Ver Artigos</a>
+  </div>
+
+  <footer>
+    <p>O OBSERVADOR © 2025 — Documentários sobre História</p>
+  </footer>
+</body>
+</html>
